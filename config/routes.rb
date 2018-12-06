@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :posts
+  resources :tweets
   ActiveAdmin.routes(self)
   devise_for :users
   as :user do
