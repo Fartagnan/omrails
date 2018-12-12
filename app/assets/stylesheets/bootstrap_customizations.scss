@@ -26,7 +26,7 @@ $theme-colors: (
   warning: #f0ad4e,
   danger: #d9534f,
   light: #818a91,
-  dark: #373a3c
+  dark: #373a3c,
 ) !default;
 
 
@@ -95,7 +95,7 @@ $headings-margin-bottom: ($spacer / 2);
 $headings-font-family:   inherit;
 $headings-font-weight:   500;
 $headings-line-height:   1.1;
-$headings-color:         inherit;
+$headings-color:         #1E4363;
 
 
 // Components
