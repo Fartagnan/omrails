@@ -5,17 +5,14 @@
       <% if user_signed_in? %>
         <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title">Your Account</h5>
-            <p class="card-text"><%= link_to current_user.username, user_path(current_user.username) %></p>      
+            <h5 class="card-title"><%= @user.username %></h5>
+            <p class="card-text"><%= @user.name %></p>      
           </div>
         </div>
       <% end %>
     </div>
     <div class="col-md-8">
-
-      <% if user_signed_in? %>
-        <%= link_to 'New Tweet', new_tweet_path, class: "btn btn-primary" %>
-      <% end %>
+    	
       <div class="card" style="width: 18rem;">
         <ul class="list-group list-group-flush">
           <% @tweets.each do |tweet| %>
